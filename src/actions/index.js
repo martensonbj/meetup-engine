@@ -3,7 +3,7 @@ const SET_SUN_DATA = 'SET_SUN_DATA';
 import axios from 'axios';
 import jsonp from 'jsonp';
 
-const LOCAL = `https://www.opentdb.com/api.php?amount=10`
+const LOCAL = `https://opentdb.com/api.php?amount=10`
 const SUNDATA = `http://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400`
 
 const setSunData = (data) => {
