@@ -1,9 +1,14 @@
 const SET_SUN_DATA = 'SET_SUN_DATA';
 
 import axios from 'axios';
-import jsonp from 'jsonp';
 
-const LOCAL = `https://opentdb.com/api.php?amount=10`
+const API_KEY = 'AIzaSyA0-qvrd1FgBP9Vhe-D8kiFDij0Gm1NmDY'
+const LOCAL = `https://maps.googleapis.com/maps/api/place/nearbysearch/json
+  ?location=-33.8670522,151.1957362
+  &radius=500
+  &types=food
+  &name=harbour
+  &key=AIzaSyA0-qvrd1FgBP9Vhe-D8kiFDij0Gm1NmDY`
 const SUNDATA = `http://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400`
 
 const setSunData = (data) => {
